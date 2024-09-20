@@ -41,11 +41,11 @@
     <button>Search</button>
 </section>
     <div class="filter-options">
-        <button onclick="toggleType('all')">Show All</button>
-        <button onclick="toggleType('veg')">Show Only Veg</button>
-        <button onclick="toggleType('non-veg')">Show Only Non-Veg</button>
-        <label><input type="radio" name="ratingFilter" onclick="filterByRating(4.5)"> Rating Above 4.5</label>
-        <label><input type="radio" name="ratingFilter" onclick="filterByRating(4.0)"> Rating Below 4.0</label>
+        <div class="all"><button onclick="toggleType('all')">Show All</button></div>
+        <div><button class="veg" onclick="toggleType('veg')">Show Only Veg</button></div>
+        <div><button class="non-veg" onclick="toggleType('non-veg')">Show Only Non-Veg</button></div>
+        <label class="rating1"><input type="radio" name="ratingFilter" onclick="filterByRating(4.5)"> Rating Above 4.5</label>
+        <label class="rating"><input type="radio" name="ratingFilter" onclick="filterByRating(4.0)"> Rating Below 4.0</label>
     </div>
 </header>
 

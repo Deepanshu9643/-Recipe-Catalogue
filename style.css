@@ -122,26 +122,49 @@ h1 {
 
 .filter-options {
     display: flex;
-    justify-content: space-around;
+   
     margin-bottom: 20px;
+    gap: 20px;
 }
 
 button {
     padding: 10px;
-    background-color: #007bff;
+    /* background-color: #007bff; */
     color: white;
     border: none;
     cursor: pointer;
     font-size: larger;
+    border-radius: 20px;
+    
 }
 
-button:hover {
+.filter-options .all button {
+  background-color: purple;
+ 
+}
+
+.filter-options .veg {
+  background-color: green; 
+}
+
+.filter-options .non-veg {
+  background-color: red; 
+}
+
+
+
+.filter-options button:hover {
     background-color: #0056b3;
 }
 
 .filter-options label{
     font-size: large;
 }
+
+.filter-options .rating1 {
+  margin-left: auto;
+  gap: 10px;
+ } 
 
 .recipe-container {
     display: grid;
